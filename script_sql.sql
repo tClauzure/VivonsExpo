@@ -79,32 +79,16 @@ CREATE TABLE UTILISATEUR(
         nom       Varchar (50) NOT NULL ,
         prenom    Varchar (50) NOT NULL ,
         telephone Varchar (14) NOT NULL ,
-        mail      Varchar (100) NOT NULL
-	,CONSTRAINT UTILISATEUR_PK PRIMARY KEY (login)
-)ENGINE=InnoDB;
-
-
-#------------------------------------------------------------
-# Table: EXPOSANT
-#------------------------------------------------------------
-
-CREATE TABLE EXPOSANT(
-        login            Varchar (100) NOT NULL ,
-        raisonSociale    Varchar (40) ,
+        mail      Varchar (100) NOT NULL,
+		typeUtilisateur varchar(20) NOT NULL,
+		raisonSociale    Varchar (40) ,
         activite         Varchar (25) ,
         anneeInscription Int ,
         siteInternet     Varchar (14) NOT NULL ,
-        exposer          Bool NOT NULL ,
-        mdp              Varchar (100) NOT NULL ,
-        nom              Varchar (50) NOT NULL ,
-        prenom           Varchar (50) NOT NULL ,
-        telephone        Varchar (14) NOT NULL ,
-        mail             Varchar (100) NOT NULL ,
-        codeS            Varchar (2) NOT NULL
-	,CONSTRAINT EXPOSANT_PK PRIMARY KEY (login)
-
-	,CONSTRAINT EXPOSANT_UTILISATEUR_FK FOREIGN KEY (login) REFERENCES UTILISATEUR(login)
-	,CONSTRAINT EXPOSANT_SECTEUR0_FK FOREIGN KEY (codeS) REFERENCES SECTEUR(codeS)
+        exposer          Bool NOT NULL,
+		codeS            Varchar (2) NOT NULL
+	,CONSTRAINT UTILISATEUR_PK PRIMARY KEY (login)
+	,CONSTRAINT UTILISATEUR_SECTEUR0_FK FOREIGN KEY (codeS) REFERENCES SECTEUR(codeS)
 )ENGINE=InnoDB;
 
 
@@ -119,7 +103,7 @@ CREATE TABLE DEMANDE(
         login Varchar (100) NOT NULL
 	,CONSTRAINT DEMANDE_PK PRIMARY KEY (numD)
 
-	,CONSTRAINT DEMANDE_EXPOSANT_FK FOREIGN KEY (login) REFERENCES EXPOSANT(login)
+	,CONSTRAINT DEMANDE_UTILISATEUR_FK FOREIGN KEY (login) REFERENCES UTILISATEUR(login)
 )ENGINE=InnoDB;
 
 
@@ -138,23 +122,9 @@ CREATE TABLE STAND(
 
 	,CONSTRAINT STAND_ALLEE_FK FOREIGN KEY (numH_HALL_ALLEE,codeA) REFERENCES ALLEE(numH,codeA)
 	,CONSTRAINT STAND_TRAVEE0_FK FOREIGN KEY (numH_HALL_TRAVEE,numT) REFERENCES TRAVEE(numH,numT)
-	,CONSTRAINT STAND_EXPOSANT1_FK FOREIGN KEY (login) REFERENCES EXPOSANT(login)
+	,CONSTRAINT DEMANDE_UTILISATEUR_FK FOREIGN KEY (login) REFERENCES UTILISATEUR(login)
 )ENGINE=InnoDB;
 
 
-#------------------------------------------------------------
-# Table: STAFF
-#------------------------------------------------------------
 
-CREATE TABLE STAFF(
-        login     Varchar (100) NOT NULL ,
-        mdp       Varchar (100) NOT NULL ,
-        nom       Varchar (50) NOT NULL ,
-        prenom    Varchar (50) NOT NULL ,
-        telephone Varchar (14) NOT NULL ,
-        mail      Varchar (100) NOT NULL
-	,CONSTRAINT STAFF_PK PRIMARY KEY (login)
-
-	,CONSTRAINT STAFF_UTILISATEUR_FK FOREIGN KEY (login) REFERENCES UTILISATEUR(login)
-)ENGINE=InnoDB;
 
