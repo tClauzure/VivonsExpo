@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <selector xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:ignore="MissingConstraints">
+        <item android:state_pressed="true" android:color="#ffff0000"/>
+        <item android:color="#ff000000"/>
+    </selector>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="123dp"
+        android:layout_height="118dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="174dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="Description du stand"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="137dp" />
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Numéro de stand"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/TextNum"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@+id/numero"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/hall"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Hall"
+        app:layout_constraintTop_toBottomOf="@+id/TextNum"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/TextHall"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@+id/hall"
+        app:layout_constraintTop_toBottomOf="@+id/TextNum"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/secteur"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Secteur"
+        app:layout_constraintTop_toBottomOf="@+id/TextHall"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/TextSecteur"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@+id/secteur"
+        app:layout_constraintTop_toBottomOf="@+id/TextHall"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/travee"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Numéro de Travée"
+        app:layout_constraintTop_toBottomOf="@+id/TextSecteur"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/TextTravee"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@+id/travee"
+        app:layout_constraintTop_toBottomOf="@+id/TextSecteur"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="158dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="72dp"
+        android:paddingHorizontal="40dp"
+        android:text="retour"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextTravee"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

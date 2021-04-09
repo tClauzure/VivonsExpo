@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <selector xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:ignore="MissingConstraints">
+        <item android:state_pressed="true" android:color="#ffff0000"/>
+        <item android:color="#ff000000"/>
+    </selector>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="123dp"
+        android:layout_height="118dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/TextLogin"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Raison"
+        android:layout_width="81dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:text="Raison de la modification"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/TextRaison"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/TextLogin"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Souhait"
+        android:layout_width="81dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:text="Raison de la modification"
+        app:layout_constraintTop_toBottomOf="@+id/Raison"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/TextSouhait"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@+id/Raison"
+        app:layout_constraintTop_toBottomOf="@+id/TextRaison"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonEnvoyer"
+        android:layout_width="323dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingHorizontal="40dp"
+        android:text="Envoyer"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextSouhait" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="158dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="72dp"
+        android:paddingHorizontal="40dp"
+        android:text="retour"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnvoyer"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
