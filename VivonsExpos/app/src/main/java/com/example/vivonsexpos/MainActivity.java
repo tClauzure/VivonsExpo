@@ -21,7 +21,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        final Button buttonMenuVisiteur = (Button) findViewById(R.id.buttonCatalogue);
+        buttonMenuVisiteur.setOnClickListener((new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, menuVisiteur.class);
+                startActivity(intent);
+            }
+        }));
 
     }
 }
