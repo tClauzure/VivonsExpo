@@ -35,6 +35,26 @@ public class MenuExposant extends AppCompatActivity {
                 }
             });
 
+            final Button buttonModif = findViewById(R.id.buttonDemandeMotdif);
+            buttonModif.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MenuExposant.this, MenuExposantModif.class);
+                    startActivity(intent);
+
+                }
+            });
+
+            final Button buttonRetour = findViewById(R.id.buttonback);
+            buttonRetour.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MenuExposant.this, MenuConnexion.class);
+                    startActivity(intent);
+
+                }
+            });
+
 
         } catch (JSONException e) {
             Toast.makeText(MenuExposant.this, "message !", Toast.LENGTH_SHORT).show();

@@ -38,6 +38,16 @@ public class MenuConnexion extends AppCompatActivity {
                 }
             }
         });
+
+        final Button buttonRetour = findViewById(R.id.buttonback);
+        buttonRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuConnexion.this, MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     public void authentification() throws IOException {
