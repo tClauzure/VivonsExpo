@@ -16,11 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".pageConnex"></activity>
-        <activity android:name=".validationInscription"></activity>
-        <activity android:name=".gestionSecteur"></activity>
-        <activity android:name=".affectationStand"></activity>
-        <activity android:name=".menuStaff"></activity>
+        <activity android:name=".pageConnex"/>
+        <activity android:name=".validationInscription"/>
+        <activity android:name=".gestionSecteur"/>
+        <activity android:name=".affectationStand"/>
+        <activity android:name=".menuStaff"/>
+        <activity android:name=".modifStand"/>
 
     </application>
 
