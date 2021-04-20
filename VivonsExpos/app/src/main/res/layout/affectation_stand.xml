@@ -34,18 +34,18 @@
         tools:layout_editor_absoluteY="256dp">
 
         <RadioButton
-            android:id="@+id/"
+            android:id="@+id/oui"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/pirates" />
+            android:text="" />
 
         <RadioButton
-            android:id="@+id/radio_ninjas"
+            android:id="@+id/oui2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/ninjas" />
+            android:text="" />
     </RadioGroup>
 
     <RadioGroup
@@ -61,14 +61,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/pirates" />
+            android:text="" />
 
         <RadioButton
             android:id="@+id/radio_ninjas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/ninjas" />
+            android:text="" />
     </RadioGroup>
 
     <Button

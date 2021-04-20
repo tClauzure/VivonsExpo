@@ -6,6 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="123dp"
+        android:layout_height="118dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/titreAffectStand"
         android:layout_width="237dp"
@@ -18,30 +27,30 @@
 
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="246dp"
+        android:layout_height="253dp"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="64dp">
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="257dp">
 
         <CheckBox
             android:id="@+id/checkbox_meat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
-            android:text="@string/meat" />
+            android:text="" />
 
         <CheckBox
             android:id="@+id/checkbox_cheese"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
-            android:text="@string/cheese" />
+            android:text="" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/buttonAjouterGestionSecteur"
+        android:id="@+id/btnValider"
         android:layout_width="158dp"
         android:layout_height="65dp"
         android:layout_marginStart="112dp"
