@@ -23,5 +23,45 @@ public class menuStaff extends AppCompatActivity {
             }
         });
 
+        final Button buttonModifStand = (Button) findViewById(R.id.btnModificationStand);
+        buttonModifStand.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(menuStaff.this, modifStand.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button buttonValidationInscription = (Button) findViewById(R.id.btnValidationInscription);
+        buttonValidationInscription.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(menuStaff.this, validationInscription.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button buttonGestionSecteur = (Button) findViewById(R.id.btnGestionSecteur);
+        buttonGestionSecteur.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(menuStaff.this, gestionSecteur.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button buttonRetour = (Button) findViewById(R.id.buttonback);
+        buttonRetour.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(menuStaff.this, pageConnex.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

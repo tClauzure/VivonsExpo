@@ -13,6 +13,14 @@ public class validationInscription extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final Button buttonRetour = (Button) findViewById(R.id.buttonback);
+        buttonRetour.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(validationInscription.this, menuStaff.class);
+                startActivity(intent);
+            }
+        });
     }
 }
