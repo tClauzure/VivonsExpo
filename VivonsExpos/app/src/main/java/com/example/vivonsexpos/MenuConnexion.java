@@ -25,8 +25,8 @@ public class MenuConnexion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        final Button buttonValiderAuthentification = (Button) findViewById(R.id.buttonconnex);
+        setContentView(R.layout.page_connex);
+       final Button buttonValiderAuthentification = (Button) findViewById(R.id.buttonconnex);
         buttonValiderAuthentification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +36,16 @@ public class MenuConnexion extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }
+        });
+
+        final Button buttonInscription = findViewById(R.id.buttoninscription);
+        buttonInscription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuConnexion.this, MenuInscription.class);
+                startActivity(intent);
+
             }
         });
 
@@ -50,7 +60,7 @@ public class MenuConnexion extends AppCompatActivity {
         });
     }
 
-    public void authentification() throws IOException {
+   public void authentification() throws IOException {
         final EditText textLogin = findViewById(R.id.TextLogin);
         final EditText textMdp = findViewById(R.id.TextMdp);
         RequestBody formBody = new FormBody.Builder()
@@ -71,7 +81,7 @@ public class MenuConnexion extends AppCompatActivity {
                     try {
                         JSONObject utilisateur = new JSONObject(responseStr);
                         Log.d("Test",utilisateur.getString("nom") + " est  connecté");
-                        if(utilisateur.getString("typeUtilisateur").compareTo("staff")!=0) {
+                        if(utilisateur.getString("typeUtilisateur").compareTo("exposant")!=0) {
                             Intent intent = new Intent(MenuConnexion.this, MenuExposant.class);
                             intent.putExtra("utilisateur", utilisateur.toString());
                             startActivity(intent);
@@ -96,5 +106,5 @@ public class MenuConnexion extends AppCompatActivity {
             }
 
         });
-    }
+   }
 }
