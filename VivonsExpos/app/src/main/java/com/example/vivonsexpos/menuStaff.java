@@ -11,7 +11,7 @@ public class menuStaff extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.menu_staff);
 
         final Button buttonAffectationStand = (Button) findViewById(R.id.btnAffectationStand);
         buttonAffectationStand.setOnClickListener(new View.OnClickListener() {
@@ -58,8 +58,7 @@ public class menuStaff extends AppCompatActivity {
 
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(menuStaff.this, pageConnex.class);
-                startActivity(intent);
+                menuStaff.this.finish();
             }
         });
 

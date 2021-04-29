@@ -12,15 +12,14 @@ public class gestionSecteur extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.gestion_secteur);
 
     final Button buttonRetour = (Button) findViewById(R.id.buttonback);
         buttonRetour.setOnClickListener(new View.OnClickListener() {
 
         @Override
         public void onClick(View v){
-            Intent intent = new Intent(gestionSecteur.this, pageConnex.class);
-            startActivity(intent);
+            gestionSecteur.this.finish();
         }
     });
     }

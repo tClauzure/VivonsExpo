@@ -12,15 +12,14 @@ public class modifStand extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.modif_stand);
 
         final Button buttonRetour = (Button) findViewById(R.id.buttonback);
         buttonRetour.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(modifStand.this, menuStaff.class);
-                startActivity(intent);
+                modifStand.this.finish();
             }
         });
     }
