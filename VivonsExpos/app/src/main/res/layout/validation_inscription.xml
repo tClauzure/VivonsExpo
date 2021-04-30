@@ -26,28 +26,12 @@
         tools:layout_editor_absoluteY="158dp" />
 
 
-    <LinearLayout
-        android:layout_width="246dp"
-        android:layout_height="253dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="257dp">
+    <ListView
+        android:id="@+id/listCandidat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-        <CheckBox
-            android:id="@+id/checkbox_meat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onCheckboxClicked"
-            android:text="" />
 
-        <CheckBox
-            android:id="@+id/checkbox_cheese"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onCheckboxClicked"
-            android:text="" />
-    </LinearLayout>
 
     <Button
         android:id="@+id/btnValider"

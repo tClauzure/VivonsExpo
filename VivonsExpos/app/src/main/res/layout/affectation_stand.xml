@@ -25,52 +25,6 @@
         tools:layout_editor_absoluteX="87dp"
         tools:layout_editor_absoluteY="158dp" />
 
-    <RadioGroup
-        android:layout_width="144dp"
-        android:layout_height="322dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="256dp">
-
-        <RadioButton
-            android:id="@+id/oui"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="" />
-
-        <RadioButton
-            android:id="@+id/oui2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:layout_width="154dp"
-        android:layout_height="319dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="258dp">
-
-        <RadioButton
-            android:id="@+id/radio_pirates"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="" />
-
-        <RadioButton
-            android:id="@+id/radio_ninjas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="" />
-    </RadioGroup>
-
     <Button
         android:id="@+id/buttonAjouterGestionSecteur"
         android:layout_width="158dp"
