@@ -75,7 +75,8 @@ public class pageConnex extends AppCompatActivity {
                     try {
                         JSONObject staff = new JSONObject(responseStr);
                         Log.d("Test",staff.getString("nom") + " est  connecté");
-                        if(staff.getString("typeUtilisateur").compareTo("staff")!=0) {
+                        Log.d("typeUtilisateur",staff.getString("typeUtilisateur"));
+                        if(staff.getString("typeUtilisateur").compareTo("staff")==0) {
                             Intent intent = new Intent(pageConnex.this, menuStaff.class);
                             intent.putExtra("staff", staff.toString());
                             startActivity(intent);
