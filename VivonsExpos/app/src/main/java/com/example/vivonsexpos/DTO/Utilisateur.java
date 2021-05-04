@@ -34,6 +34,9 @@ public class Utilisateur {
         this.InscriptionValider = pInscriptionValider;
     }
 
+    public  String getLogin(){
+        return this.login;
+    }
 
 
 }
