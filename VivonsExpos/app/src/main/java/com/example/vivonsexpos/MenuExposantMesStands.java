@@ -46,8 +46,7 @@ public class MenuExposantMesStands extends AppCompatActivity {
 
                 }
             });
-
-
+            
         } catch (JSONException e) {
             Toast.makeText(MenuExposantMesStands.this, "message !", Toast.LENGTH_SHORT).show();
         }

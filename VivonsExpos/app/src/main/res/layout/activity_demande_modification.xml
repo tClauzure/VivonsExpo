@@ -4,11 +4,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <selector xmlns:android="http://schemas.android.com/apk/res/android"
-        tools:ignore="MissingConstraints">
-        <item android:state_pressed="true" android:color="#ffff0000"/>
-        <item android:color="#ff000000"/>
-    </selector>
 
     <ImageView
         android:id="@+id/logo"
@@ -39,7 +34,6 @@
         android:layout_marginTop="40dp"
         android:ems="10"
         android:hint=""
-        android:inputType="textPassword"
         app:layout_constraintLeft_toRightOf="@+id/login"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         tools:ignore="MissingConstraints" />
@@ -64,7 +58,6 @@
         android:layout_marginTop="44dp"
         android:ems="10"
         android:hint=""
-        android:inputType="textPassword"
         app:layout_constraintLeft_toRightOf="@+id/login"
         app:layout_constraintTop_toBottomOf="@+id/TextLogin"
         tools:ignore="MissingConstraints" />
@@ -89,7 +82,6 @@
         android:layout_marginTop="44dp"
         android:ems="10"
         android:hint=""
-        android:inputType="textPassword"
         app:layout_constraintLeft_toRightOf="@+id/Raison"
         app:layout_constraintTop_toBottomOf="@+id/TextRaison"
         tools:ignore="MissingConstraints" />

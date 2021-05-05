@@ -68,7 +68,7 @@ public class MenuConnexion extends AppCompatActivity {
                 .add("mdp",  textMdp.getText().toString())
                 .build();
         Request request = new Request.Builder()
-                .url("http://localhost/VivonsExpo_php/controleurs/connexion.php")
+                .url("http://192.168.56.1/VivonsExpo_php/controleurs/connexion.php")
                 .post(formBody)
                 .build();
 
