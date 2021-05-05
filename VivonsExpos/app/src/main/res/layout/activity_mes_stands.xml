@@ -45,19 +45,12 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
-<<<<<<< Updated upstream
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint=""
-<<<<<<< Updated upstream
-=======
-=======
-        android:layout_marginTop="32dp"
         android:text=""
         android:textSize="18sp"
         android:textStyle="bold"
->>>>>>> Stashed changes
->>>>>>> Stashed changes
         app:layout_constraintLeft_toRightOf="@+id/numero"
         app:layout_constraintTop_toBottomOf="@+id/textIdentification"
         tools:ignore="MissingConstraints" />
@@ -80,17 +73,11 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
-<<<<<<< Updated upstream
         android:ems="10"
         android:hint=""
-<<<<<<< Updated upstream
-=======
-=======
         android:text=""
         android:textSize="18sp"
         android:textStyle="bold"
->>>>>>> Stashed changes
->>>>>>> Stashed changes
         app:layout_constraintLeft_toRightOf="@+id/hall"
         app:layout_constraintTop_toBottomOf="@+id/TextNum"
         tools:ignore="MissingConstraints" />
@@ -113,16 +100,12 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
-<<<<<<< Updated upstream
         android:ems="10"
         android:hint=""
         app:layout_constraintLeft_toRightOf="@+id/secteur"
-=======
         android:text=""
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@+id/travee"
->>>>>>> Stashed changes
         app:layout_constraintTop_toBottomOf="@+id/TextHall"
         tools:ignore="MissingConstraints" />
 
@@ -144,12 +127,8 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
-<<<<<<< Updated upstream
         android:ems="10"
         android:hint=""
-        app:layout_constraintLeft_toRightOf="@+id/travee"
-        app:layout_constraintTop_toBottomOf="@+id/TextSecteur"
-=======
         android:text=""
         android:textSize="18sp"
         android:textStyle="bold"
@@ -180,7 +159,6 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/secteur"
         app:layout_constraintTop_toBottomOf="@+id/TextAllee"
->>>>>>> Stashed changes
         tools:ignore="MissingConstraints" />
 
     <Button

@@ -23,6 +23,7 @@
         <activity android:name=".MenuExposant"></activity>
         <activity android:name=".MenuExposantMesStands"></activity>
         <activity android:name=".MenuExposantModif"></activity>
+        <activity android:name=".MenuInscription"></activity>
         <activity android:name=".MenuConnexion"></activity>
     </application>
 

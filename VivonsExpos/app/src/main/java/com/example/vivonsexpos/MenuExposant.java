@@ -19,7 +19,7 @@ public class MenuExposant extends AppCompatActivity {
         setContentView(R.layout.activity_consultation_stand);
 
         try {
-            final JSONObject user = new JSONObject(getIntent().getStringExtra("utilisateur"));
+            final JSONObject exposant = new JSONObject(getIntent().getStringExtra("utilisateur"));
 
             final TextView textIdentification = findViewById(R.id.textIdentification);
             String texteIdentification = exposant.getString("prenom") + " " + exposant.getString("nom");

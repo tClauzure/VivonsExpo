@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/TextLogin"
         tools:ignore="MissingConstraints" />
 
-<<<<<<< Updated upstream
+
     <TextView
         android:id="@+id/Souhait"
         android:layout_width="81dp"
@@ -86,8 +86,6 @@
         app:layout_constraintLeft_toRightOf="@+id/Raison"
         app:layout_constraintTop_toBottomOf="@+id/TextRaison"
         tools:ignore="MissingConstraints" />
-=======
->>>>>>> Stashed changes
 
     <Button
         android:id="@+id/buttonEnvoyer"

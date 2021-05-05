@@ -21,7 +21,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MenuExposantModif extends AppCompatActivity {
+import java.util.ArrayList;
+
+import okhttp3.OkHttpClient;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,7 +46,6 @@ public class MenuExposantModif extends AppCompatActivity {
     ArrayList<String> arrayList = new ArrayList<>();
     ListView listView;
 
->>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,24 +60,20 @@ public class MenuExposantModif extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
->>>>>>> Stashed changes
 
             final Button buttonEnvoyer = findViewById(R.id.buttonEnvoyer);
             buttonEnvoyer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-<<<<<<< Updated upstream
                     Intent intent = new Intent(MenuExposantModif.this, MenuExposant.class);
-=======
                     try {
                         demandeModif(exposant);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    Intent intent = new Intent(MenuExposantModif.this, MenuExposantModif.class );
-                    intent.putExtra("utilisateur", exposant.toString());
->>>>>>> Stashed changes
-                    startActivity(intent);
+                    Intent intent_menu = new Intent(MenuExposantModif.this, MenuExposantModif.class );
+                    intent_menu.putExtra("utilisateur", exposant.toString());
+                    startActivity(intent_menu);
 
                 }
             });
@@ -90,11 +88,6 @@ public class MenuExposantModif extends AppCompatActivity {
                 }
             });
 
-<<<<<<< Updated upstream
-
-        } catch (JSONException e) {
-            Toast.makeText(MenuExposantModif.this, "message !", Toast.LENGTH_SHORT).show();
-=======
         } catch (JSONException e) {
             Toast.makeText(MenuExposantModif.this, "message !", Toast.LENGTH_SHORT).show();
         }
@@ -196,7 +189,6 @@ public class MenuExposantModif extends AppCompatActivity {
             }
         }catch (JSONException e){
 
->>>>>>> Stashed changes
         }
     }
 }
