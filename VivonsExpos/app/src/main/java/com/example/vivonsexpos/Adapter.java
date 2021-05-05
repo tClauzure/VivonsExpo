@@ -1,10 +1,11 @@
-package com.example.vivonsexpos;
+/*package com.example.vivonsexpos;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -41,9 +42,15 @@ public class CustomListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent){
         RecyclerView.ViewHolder holder;
         if(convertView == null){
-            convertView = layoutInflater.inflate(R.layout.list_item_layout,null);
-            holder =  new ViewHolder();
+            convertView = layoutInflater.inflate(R.layout.l,null);
+            holder =  new RecyclerView.ViewHolder();
 
+            convertView.setTag(holder);
         }
+        else{
+            holder = (RecyclerView.ViewHolder) convertView.getTag();
+        }
+        return convertView;
     }
 }
+*/
