@@ -62,6 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/TextLogin"
         tools:ignore="MissingConstraints" />
 
+<<<<<<< Updated upstream
     <TextView
         android:id="@+id/Souhait"
         android:layout_width="81dp"
@@ -85,23 +86,43 @@
         app:layout_constraintLeft_toRightOf="@+id/Raison"
         app:layout_constraintTop_toBottomOf="@+id/TextRaison"
         tools:ignore="MissingConstraints" />
+=======
+>>>>>>> Stashed changes
 
     <Button
         android:id="@+id/buttonEnvoyer"
-        android:layout_width="323dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:paddingHorizontal="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="8dp"
         android:text="Envoyer"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextSouhait" />
+        app:layout_constraintTop_toBottomOf="@+id/TextRaison" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="17dp"
+        android:text="Attention, seulement trois demandes sont autorisées"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnvoyer" />
+
+    <ListView
+        android:id="@+id/listViewDemandes"
+        android:layout_width="374dp"
+        android:layout_height="227dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo" />
 
     <Button
         android:id="@+id/buttonback"
@@ -113,7 +134,7 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonEnvoyer"
+        app:layout_constraintTop_toBottomOf="@+id/TextTravee"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

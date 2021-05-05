@@ -22,7 +22,7 @@ public class MenuExposant extends AppCompatActivity {
             final JSONObject user = new JSONObject(getIntent().getStringExtra("utilisateur"));
 
             final TextView textIdentification = findViewById(R.id.textIdentification);
-            String texteIdentification = user.getString("prenom") + " " + user.getString("nom");
+            String texteIdentification = exposant.getString("prenom") + " " + exposant.getString("nom");
             textIdentification.setText(texteIdentification);
 
             final Button buttonMesStand = findViewById(R.id.buttonMesStands);
@@ -30,6 +30,7 @@ public class MenuExposant extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(MenuExposant.this, MenuExposantMesStands.class);
+                    intent.putExtra("utilisateur", exposant.toString());
                     startActivity(intent);
 
                 }
@@ -59,5 +60,7 @@ public class MenuExposant extends AppCompatActivity {
         } catch (JSONException e) {
             Toast.makeText(MenuExposant.this, "message !", Toast.LENGTH_SHORT).show();
         }
+
     }
 }
+

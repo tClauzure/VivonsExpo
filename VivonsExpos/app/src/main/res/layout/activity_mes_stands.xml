@@ -15,14 +15,18 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/titre"
-        android:layout_width="174dp"
-        android:layout_height="46dp"
+        android:id="@+id/textIdentification"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="16dp"
-        android:text="Description du stand"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="137dp" />
+        android:gravity="center_vertical"
+        android:text="Nom prenom"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
         android:id="@+id/numero"
@@ -30,22 +34,32 @@
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
         android:text="Numéro de stand"
-        app:layout_constraintTop_toBottomOf="@+id/titre"
+        app:layout_constraintTop_toBottomOf="@+id/textIdentification"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="7dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/TextNum"
         android:layout_width="282dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
+<<<<<<< Updated upstream
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint=""
+<<<<<<< Updated upstream
+=======
+=======
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         app:layout_constraintLeft_toRightOf="@+id/numero"
-        app:layout_constraintTop_toBottomOf="@+id/titre"
+        app:layout_constraintTop_toBottomOf="@+id/textIdentification"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -58,7 +72,7 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="7dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/TextHall"
         android:layout_width="282dp"
         android:layout_height="wrap_content"
@@ -66,34 +80,19 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
+<<<<<<< Updated upstream
         android:ems="10"
         android:hint=""
+<<<<<<< Updated upstream
+=======
+=======
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         app:layout_constraintLeft_toRightOf="@+id/hall"
         app:layout_constraintTop_toBottomOf="@+id/TextNum"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/secteur"
-        android:layout_width="69dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="28dp"
-        android:text="Secteur"
-        app:layout_constraintTop_toBottomOf="@+id/TextHall"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp" />
-
-    <EditText
-        android:id="@+id/TextSecteur"
-        android:layout_width="282dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint=""
-        app:layout_constraintLeft_toRightOf="@+id/secteur"
-        app:layout_constraintTop_toBottomOf="@+id/TextHall"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -102,11 +101,11 @@
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
         android:text="Numéro de Travée"
-        app:layout_constraintTop_toBottomOf="@+id/TextSecteur"
+        app:layout_constraintTop_toBottomOf="@+id/TextHall"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="7dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/TextTravee"
         android:layout_width="282dp"
         android:layout_height="wrap_content"
@@ -114,10 +113,74 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
+<<<<<<< Updated upstream
+        android:ems="10"
+        android:hint=""
+        app:layout_constraintLeft_toRightOf="@+id/secteur"
+=======
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/travee"
+>>>>>>> Stashed changes
+        app:layout_constraintTop_toBottomOf="@+id/TextHall"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/allee"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Numéro d'allée"
+        app:layout_constraintTop_toBottomOf="@+id/TextTravee"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <TextView
+        android:id="@+id/TextAllee"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+<<<<<<< Updated upstream
         android:ems="10"
         android:hint=""
         app:layout_constraintLeft_toRightOf="@+id/travee"
         app:layout_constraintTop_toBottomOf="@+id/TextSecteur"
+=======
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/allee"
+        app:layout_constraintTop_toBottomOf="@+id/TextTravee"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/secteur"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Secteur"
+        app:layout_constraintTop_toBottomOf="@+id/TextAllee"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <TextView
+        android:id="@+id/TextSecteur"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/secteur"
+        app:layout_constraintTop_toBottomOf="@+id/TextAllee"
+>>>>>>> Stashed changes
         tools:ignore="MissingConstraints" />
 
     <Button
