@@ -40,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/ListViewUnivers"
         app:layout_constraintVertical_bias="0.057"
         tools:ignore="MissingConstraints" />
 
@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonAjouterGestionSecteur2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/ListViewUnivers"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
@@ -75,33 +75,16 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonAjouterGestionSecteur3"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/ListViewUnivers"
         app:layout_constraintVertical_bias="0.054"
         tools:ignore="MissingConstraints" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
+    <ListView
+        android:id="@+id/ListViewUnivers"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="203dp">
-
-        <RadioButton
-            android:id="@+id/radio_pirates"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="" />
-
-        <RadioButton
-            android:id="@+id/radio_ninjas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="" />
-    </RadioGroup>
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/titre"
+        />
 
     <Button
         android:id="@+id/buttonback"

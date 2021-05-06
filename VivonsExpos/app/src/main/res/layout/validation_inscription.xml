@@ -30,9 +30,8 @@
         android:id="@+id/listCandidat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/titreAffectStand"/>
-
-
+        app:layout_constraintTop_toBottomOf="@+id/titreAffectStand"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btnValider"
@@ -54,7 +53,7 @@
         android:id="@+id/buttonback"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttoninscription"
+
         app:layout_constraintVertical_bias="1.0"
         android:layout_width="158dp"
         android:layout_height="65dp"
