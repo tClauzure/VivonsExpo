@@ -47,6 +47,12 @@ public class validationInscription extends AppCompatActivity {
         }
 
 
+        @Override
+        final void onItemClick(){
+            Intent intent = new Intent(validationInscription.this, confirmationValidation.class);
+        }
+
+
         final Button buttonRetour = (Button) findViewById(R.id.buttonback);
         buttonRetour.setOnClickListener(new View.OnClickListener() {
 

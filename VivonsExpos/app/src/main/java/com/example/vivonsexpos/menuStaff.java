@@ -48,7 +48,7 @@ public class menuStaff extends AppCompatActivity {
 
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(menuStaff.this, gestionSecteur.class);
+                Intent intent = new Intent(menuStaff.this, choixUnivers.class);
                 startActivity(intent);
             }
         });

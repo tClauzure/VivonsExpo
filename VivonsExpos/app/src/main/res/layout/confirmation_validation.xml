@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
 
     <ImageView
         android:id="@+id/logo"
@@ -19,24 +18,28 @@
         android:id="@+id/titreAffectStand"
         android:layout_width="237dp"
         android:layout_height="54dp"
-        android:text="validation inscription"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="Voulez vous confirmer l'inscription?"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        android:gravity="center"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="158dp" />
+        tools:layout_editor_absoluteX="87dp" />
 
 
-    <ListView
-        android:id="@+id/listCandidat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/titreAffectStand"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/buttonConfirmer"
+        android:layout_width="215dp"
+        android:layout_height="73dp"
 
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginBottom="216dp"
+        android:paddingHorizontal="40dp"
+        android:text="confirmer"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonback"
@@ -51,5 +54,4 @@
         android:textSize="15sp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="106dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
