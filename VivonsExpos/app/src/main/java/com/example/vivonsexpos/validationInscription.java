@@ -47,10 +47,15 @@ public class validationInscription extends AppCompatActivity {
         }
 
 
-        @Override
-        final void onItemClick(){
-            Intent intent = new Intent(validationInscription.this, confirmationValidation.class);
+        /*
+        private AdapterView.OnItemClickListener listeInscritClick  = new AdapterView.OnItemClickListener(){
+            public void onItemClick(){
+                Intent intent = new Intent(validationInscription.this, confirmationValidation.class);
+                intent.putExtra("inscrit",inscrit.toString());
+                startActivity(intent);
+            }
         }
+        */
 
 
         final Button buttonRetour = (Button) findViewById(R.id.buttonback);
